@@ -2,10 +2,10 @@ public class Athlete {
     private String name; 
     private int age; 
     private double weight;
-    private double weightClass; 
+    private String weightClass; 
     private int wins, losses, draws; 
 
-    public Athlete(String name, int age, double weight, double weightClass, 
+    public Athlete(String name, int age, double weight, String weightClass, 
                     int wins, int losses, int draws){
         this.name = name;
         this.age = age;
@@ -21,10 +21,39 @@ public class Athlete {
         return name;
     }
 
+    public int getAge(){
+        return age;
+    }
+
+    public double getWeight(){
+        return weight; 
+    }
+
+    public String getWeightClass(){
+        return weightClass;
+    }
+
+    public int getWins(){
+        return wins; 
+    }
+
+    public int getLosses(){
+        return losses; 
+    }
+    public int getDraws(){
+        return draws; 
+    }
+
     @Override
     public String toString(){
         return(
-            "Athlete Name: " + this.getName()
+            "Athlete Name: " + this.getName() + 
+            " Age: " + this.getAge() + 
+            " Weight in Lbs: " + this.getWeight() + 
+            " Weight Class: " + this.getWeightClass() + 
+            " Wins: " + this.getWins() + 
+            " Losses: " + this.getLosses() + 
+            " Draws: " + this.getDraws()
         );
     }
 
