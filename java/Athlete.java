@@ -47,7 +47,7 @@ public class Athlete {
     @Override
     public String toString(){
         return(
-            "Athlete Name: " + this.getName() + 
+            "Athlete Name: " + this.getName() + "\n" + 
             " Age: " + this.getAge() + 
             " Weight in Lbs: " + this.getWeight() + 
             " Weight Class: " + this.getWeightClass() + 

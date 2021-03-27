@@ -10,6 +10,9 @@ public class Main{
         roster.add(new Athlete("Neil Magny", 33, 170, "Welterweight", 24, 8, 0));
         roster.add(new Athlete("Cory Sandhagen", 28, 135, "Bantamweight", 14, 2, 0));
 
-        System.out.println(roster);
+        for(Athlete a:roster){
+            System.out.println(a);
+            System.out.println();
+        }
     }
 }
